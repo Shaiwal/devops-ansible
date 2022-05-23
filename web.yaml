@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: install httpd
-      package: name=httpd state=installed
+      package: name=httpd state=latest
     - name: configure
       shell: "echo Welcome to Shaiwal TEST Server 1 - zensar > /var/www/html/index.html"
     - name: start service
