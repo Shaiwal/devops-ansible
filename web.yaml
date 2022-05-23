@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: install apache2
-      package: name=apache2 state=installed
+      package: name=apache2 state=latest
     - name: configure
       shell: "echo Welcome to Shaiwal TEST Server 1 - zensar > /var/www/html/index.html"
     - name: start service
