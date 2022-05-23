@@ -4,7 +4,7 @@ region = "us-east-1"
 resource "aws_instance" "Shaiwal-test-aws" {
   ami = "ami-0c4f7023847b90238"
   instance_type = "t2.micro"
-  key_name = "shaiwal-test-keypair-1"
+  key_name = "shaiwal-key"
 
   tags = {
     Name = "Shaiwal-devops-server-v1"
